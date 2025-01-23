@@ -105,7 +105,7 @@ class Country {
 
   static Country? tryParseByPhoneCode(String phoneCode) {
     return CountryParser.tryParsePhoneCode(phoneCode);
-  }
+    }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
