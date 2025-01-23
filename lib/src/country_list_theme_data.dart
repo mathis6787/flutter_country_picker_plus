@@ -52,9 +52,9 @@ class CountryListThemeData {
   final EdgeInsets? margin;
 
   const CountryListThemeData({
-    this.countryNameTextStyle,
     this.backgroundColor,
     this.textStyle,
+    this.countryNameTextStyle,
     this.searchTextStyle,
     this.flagSize,
     this.inputDecoration,
