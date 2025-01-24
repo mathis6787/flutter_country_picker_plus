@@ -200,6 +200,7 @@ class _CountryListViewState extends State<CountryListView> {
           child: Row(
             children: <Widget>[
               Row(
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   const SizedBox(width: 20),
                   if (widget.customFlagBuilder == null)
