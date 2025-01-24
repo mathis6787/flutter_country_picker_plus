@@ -208,11 +208,11 @@ class _CountryListViewState extends State<CountryListView> {
                     widget.customFlagBuilder!(country),
                   if (widget.showPhoneCode && !country.iswWorldWide) ...[
                     const SizedBox(width: 15),
-                    SizedBox(
-                      width: 45,
+                    Flexible(
                       child: Text(
                         '${isRtl ? '' : '+'}${country.phoneCode}${isRtl ? '+' : ''}',
                         style: _textStyle,
+                        maxLines: 1,
                       ),
                     ),
                     const SizedBox(width: 5),
