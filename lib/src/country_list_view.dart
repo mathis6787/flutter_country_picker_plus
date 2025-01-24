@@ -227,6 +227,7 @@ class _CountryListViewState extends State<CountryListView> {
                           ?.countryName(countryCode: country.countryCode)
                           ?.replaceAll(RegExp(r"\s+"), " ") ??
                       country.name,
+                  maxLines: 2,
                   style: _countryNameStyle,
                 ),
               ),
